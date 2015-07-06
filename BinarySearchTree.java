@@ -69,6 +69,14 @@ public class BinarySearchTree {
 		return result;
 	}
 
+	/**
+	 * Find the successor of given node.
+	 * Notice: The first node that its left child and itself both are ancestor of the
+	 * given node is the successor.
+	 * @param node
+	 * @return
+	 * 		successor of the given node
+	 */
 	public TreeNode successor(TreeNode node) {
 		TreeNode result = node;
 		if (result.right != null) {
